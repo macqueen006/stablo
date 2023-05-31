@@ -1,0 +1,78 @@
+//Text color
+$text-color: rgb(115 115 115/1);
+$text-blue: rgb(37 99 235/1);
+$letter-spacing-sm: .05em;
+$text-purple: rgb(147 51 234/1);
+$text-emerald: rgb(4 120 87/1);
+$text-orange: rgb(194 65 12/1);
+$background-color-text:  rgb(220, 252, 231);
+//Font Size
+$step--2: clamp(0.48rem, calc(0.77rem + -0.38vw), 0.69rem);
+$step--1: clamp(0.77rem, calc(0.85rem + -0.11vw), 0.83rem);
+$step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+$step-1: clamp(1.20rem, calc(0.91rem + 1.43vw), 2.02rem);
+$step-2: clamp(1.44rem, calc(0.80rem + 3.19vw), 3.27rem);
+$step-3: clamp(1.73rem, calc(0.49rem + 6.20vw), 5.30rem);
+$step-4: clamp(2.07rem, calc(-0.18rem + 11.29vw), 8.57rem);
+$step-5: clamp(2.49rem, calc(-1.47rem + 19.78vw), 13.86rem);
+
+//Spacing
+$space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);
+$space-2xs: clamp(0.50rem, calc(0.46rem + 0.22vw), 0.63rem);
+$space-xs: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+$space-s: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+$space-m: clamp(1.50rem, calc(1.37rem + 0.65vw), 1.88rem);
+$space-l: clamp(2.00rem, calc(1.83rem + 0.87vw), 2.50rem);
+$space-xl: clamp(3.00rem, calc(2.74rem + 1.30vw), 3.75rem);
+$space-2xl: clamp(4.00rem, calc(3.65rem + 1.74vw), 5.00rem);
+$space-3xl: clamp(6.00rem, calc(5.48rem + 2.61vw), 7.50rem);
+
+/* One-up pairs */
+$space-3xs-2xs: clamp(0.25rem, calc(0.12rem + 0.65vw), 0.63rem);
+$space-2xs-xs: clamp(0.50rem, calc(0.35rem + 0.76vw), 0.94rem);
+$space-xs-s: clamp(0.75rem, calc(0.58rem + 0.87vw), 1.25rem);
+$space-s-m: clamp(1.00rem, calc(0.70rem + 1.52vw), 1.88rem);
+$space-m-l: clamp(1.50rem, calc(1.15rem + 1.74vw), 2.50rem);
+$space-l-xl: clamp(2.00rem, calc(1.39rem + 3.04vw), 3.75rem);
+$space-xl-2xl: clamp(3.00rem, calc(2.30rem + 3.48vw), 5.00rem);
+$space-2xl-3xl: clamp(4.00rem, calc(2.78rem + 6.09vw), 7.50rem);
+
+/* Custom pairs */
+$space-m-2xl: clamp(1.50rem, calc(0.28rem + 6.09vw), 5.00rem);
+
+//Grid
+$grid-max-width: 77.50rem;
+$grid-gutter: var(--space-s-l, clamp(1.00rem, calc(0.48rem + 2.61vw), 2.50rem));
+$grid-columns: 12;
+
+$link-color: rgb(82, 82, 82);
+
+.u-container {
+  max-width: $grid-max-width;
+  padding-inline: $grid-gutter;
+  margin-inline: auto;
+}
+
+.u-grid {
+  display: grid;
+  gap: $grid-gutter;
+}
+
+[role="list"] {
+  list-style: none;
+  display: flex;
+
+  li {
+    padding-inline: $space-s;
+  }
+
+  a {
+    font-size: 0.875rem;
+    color: $link-color;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
