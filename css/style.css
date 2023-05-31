@@ -116,6 +116,16 @@ body {
 .main-header nav .hamburger-menu {
   display: none;
 }
+.main-header nav [role=list] a {
+  font-weight: normal;
+  transition: color 0.2s ease-in-out;
+}
+.main-header nav [role=list] a:hover {
+  color: rgb(37, 99, 235);
+}
+.main-header .active-link {
+  color: rgb(37, 99, 235);
+}
 @media (max-width: 720px) {
   .main-header .logo {
     display: flex;
@@ -155,13 +165,6 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-}
-.mobile [role=list] a {
-  font-weight: bold;
-  transition: color 0.2s ease-in-out;
-}
-.mobile [role=list] a:hover {
-  color: rgb(147, 51, 234);
 }
 
 .main-section {

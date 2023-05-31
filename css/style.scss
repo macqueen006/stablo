@@ -70,6 +70,21 @@ body {
     .hamburger-menu {
       display: none;
     }
+
+    [role="list"] {
+      a {
+        font-weight: normal;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+          color: $text-blue;
+        }
+      }
+    }
+  }
+
+  .active-link {
+    color: $text-blue;
   }
 
   @include mq-720 {
@@ -110,17 +125,11 @@ body {
 .mobile {
   display: flex;
   flex-direction: column;
+
   [role="list"] {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    a {
-      font-weight: bold;
-      transition: color .2s ease-in-out;
-      &:hover {
-        color: $text-purple;
-      }
-    }
   }
 }
 
@@ -142,6 +151,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: $grid-gutter;
+
     .card {
       a {
         height: 18.833rem;
@@ -262,10 +272,10 @@ img {
 }
 
 .read_more {
-  display : flex ;
-  flex-direction : column ;
-  justify-content : center ;
-  align-items : center ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 2.5rem;
 }
 
@@ -317,22 +327,25 @@ img {
 }
 
 .button--mimas:hover::before {
-  transform: translate3d(100%,0,0);
+  transform: translate3d(100%, 0, 0);
 }
 
 footer {
   margin-top: 2.5rem;
   display: block;
+
   .footer-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 1.2rem;
+
     span {
       font-size: 0.875rem;
       line-height: 1.25rem;
     }
+
     a {
       margin-top: 0.25rem;
       font-size: 0.875rem;
